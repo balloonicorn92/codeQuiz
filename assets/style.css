@@ -15,6 +15,13 @@ header {
     color: #003049;
     padding: 20PX;
 }
+header div a {
+    text-decoration: none;
+    background-color: #fcfff4;
+    border: solid;
+    border-color: #003049;
+    padding: 10px 20px 10px 20px;
+}
 .title,
 .timer {
     font-size: x-large;
@@ -30,11 +37,26 @@ header {
     flex-direction: column-reverse;
     padding: 70px;
 }
-.start-screen h1,
-.end-screen h1 {
+.end-screen {
+    margin-bottom: 10px;
+}
+.start-screen h1 {
     margin: auto;
     color: #D62828;
     font-size: xxx-large;
+}
+.end-screen h1 {
+    margin: auto;
+    color: #D62828;
+    font-size: x-large;
+}
+.end-screen input {
+    width: 25%;
+    padding: 30px 50px 30px 50px;
+
+    align-self: center;
+    font-size: x-large;
+    margin-bottom: 40px;
 }
 .start {
     width: 200px;
@@ -46,6 +68,14 @@ header {
     padding: 20px;
     border-radius:10px;
     margin-top: 30px;
+}
+ul li {
+    width: 25%;
+    padding: 20px;
+    display: flex;
+    font-size: x-large;
+    margin: 20px auto;
+    background-color: white;
 }
 .question-text {
     display: flex;

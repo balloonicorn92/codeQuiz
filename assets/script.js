@@ -30,7 +30,7 @@ var questions = [
   }
   ]
 var questionIndex = 0;
-var time = questions.length * 100;
+var time = questions.length * 10;
 var timerId;
 
 
@@ -87,10 +87,10 @@ var answerCheckFunc = function() {
     }
     questionIndex++; // this is the same as questionIdex++
     if (questionIndex === questions.length) {
-      setTimeout(() => { quizEndFunc(); }, 1000);
+      setTimeout(() => { quizEndFunc(); }, 500);
 
     } else {
-        setTimeout(() => { questionsFunc(); }, 1000);
+        setTimeout(() => { questionsFunc(); }, 500);
     }
 };
 var quizEndFunc = function() {
@@ -108,7 +108,7 @@ var quizEndFunc = function() {
       playerName: name
     };
     storedHighScores.push(score);
-    localStorage.setItem('highScoreArr', JSON.stringify(score));
+    localStorage.setItem('highScoreArr', JSON.stringify(storedHighScores));
     storedHighScores.forEach(function(score){
       var listItem = document.createElement('li');
       listItem.textContent = score.playerName + ": " + score.playerScore;
