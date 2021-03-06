@@ -1,17 +1,22 @@
-# codeQuiz
-## User Story
-AS A coding boot camp student
-I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
-SO THAT I can gauge my progress compared to my peers
-## Acceptance Criteria
-GIVEN I am taking a code quiz
-WHEN I click the start button
-THEN a timer starts and I am presented with a question
-WHEN I answer a question
-THEN I am presented with another question
-WHEN I answer a question incorrectly
-THEN time is subtracted from the clock
-WHEN all questions are answered or the timer reaches 0
-THEN the game is over
-WHEN the game is over
-THEN I can save my initials and score
+# Challenge #4. Web APIs Challenge: Code Quiz
+
+## Code Quiz
+--------------------------------------------
+--------------------------------------------
+As a Coding Bootcamp student, I want to practice my skills with Array Methods and JavaScript fundamentals in order to practice. I also want to be able to save my scores in order to guage my progress. 
+---------------------------------------------
+GIVEN that I am taking a code quiz:
+
+*  I have a start screen, when 'start quix' button is pressed:
+   - I am presented with the first question of the quiz, timer begins counting down.
+*  When I choose the answer
+   - If the answer is correct, answer choice turns green indicating I was right and next questions pops up.
+   - If the answer is incorrect, answer choice turns red indicating I was wrong and I am given a 5 second penalty for choosing incorrectly.
+* When the quiz is over
+  - I am able to enter my name and my time score is stored into local storage and compared to other scores taken prior to my quiz.
+  - I also have the option press the 'retake quiz' button to restart the quiz and try again.
+----------------------------------------------------------
+![alt text](./assets/images/CodeQuiz.gif)
+
+## Website URL: https://balloonicorn92.github.io/codeQuiz/
+----------------------------------------------------------
